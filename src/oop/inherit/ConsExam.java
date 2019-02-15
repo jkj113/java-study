@@ -15,6 +15,8 @@ class Book {
 	Book(String name, int year) {
 		this.name = "책 제목 : " + name;
 		this.year = year;
+		System.out.println(this.name);
+		System.out.println("출판 년도: "+this.year);
 	}
 
 }
@@ -28,8 +30,8 @@ public class ConsExam extends Book {
 	public static void main(String[] args) {
 		ConsExam ce = new ConsExam();
 		System.out.println(ce.name);
-		Book b = new Book();
-
+		Book b = new Book("자바의 정석2nd",2015);
+		
 	}
 
 }
