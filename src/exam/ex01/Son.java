@@ -7,5 +7,6 @@ public class Son extends Father{
 	}
 	public void printInfo() {
 		System.out.println("내 소개하지!");
+	
 	}
 }
