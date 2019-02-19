@@ -19,7 +19,7 @@ public class Animal {
 		System.out.println(d[1].years);
 		System.out.println(d[4].name);
 		System.out.println(d[3].name);
-	System.out.println();
+	System.out.println();   
 		
 	Cat[] c = new Cat[5];
 		for(int i = 0; i <c.length; i++) {
