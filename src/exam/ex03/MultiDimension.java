@@ -15,7 +15,7 @@ public class MultiDimension {
 		int num = 1;
 		for (int i = 0; i < md.nums.length; i++) {
 			for (int j = 0; j < md.nums[i].length; j++) { //방 갯수의 길이
-				md.nums[i][j] = num++;
+				md.nums[i][j] = num++; //후위연산자!! 실행하고 나서 +1한 값을 가지고 있는다.
 					}
 		}	
 		for(int i = 0; i<md.nums.length;i++) {
