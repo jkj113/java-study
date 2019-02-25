@@ -26,8 +26,8 @@ public class SearchList3 {
 //		System.out.println("맞춘 갯수는 : " + a);
 //		System.out.println(numList);
 		ArrayList<Integer> sList = new ArrayList<>();
-		for(int i = 0; i <6; i++)
-		int num = Integer.parseInt(numStrs[i]);
+///		for(int i = 0; i <6; i++)
+//		int num = Integer.parseInt(numStrs[i]);
 
 	}
 }
