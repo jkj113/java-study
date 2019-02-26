@@ -26,6 +26,9 @@ public class ConnectionTest {
 				System.out.println();
 			}
 			System.out.println("연결성공!");
+//			for(HashMap<String,String> row : rowList) {
+//				System.out.println(row);
+//			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
