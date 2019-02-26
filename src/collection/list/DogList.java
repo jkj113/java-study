@@ -29,11 +29,14 @@ public class DogList {
 	d.setName("강아지"+(i+1));
 	d.setAge(i+1);
 	}
-	for(int i = 0; i < 10; i++) {
-   Dog  d = new Dog();
-   d = dList.get(i);
-   System.out.println("이름 : " +d.getName());
-   System.out.println("나이 : " +d.getAge());
+//	for(int i = 0; i < 10; i++) {
+//   Dog  d = new Dog();
+//   d = dList.get(i);
+//   System.out.println("이름 : " +d.getName());
+//   System.out.println("나이 : " +d.getAge());
+//	}
+	for(Dog d : dList) {
+		
 	}
 }
 }
