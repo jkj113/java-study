@@ -17,7 +17,7 @@ public class View {
 			System.out.println("=======================================================");
 			System.out.println("아이디 : ");
 			String id = scan.nextLine();
-			if ("osfu".equals(id)) { // id가 null일 수도 있으니까 null이 앞에 오면 에러발생
+			if ("osfu".equals(id)) { // id가 null일 수도 있으니까 -> null이 앞에 오면 에러발생
 				System.out.print("비밀번호 : ");
 				String pwd = scan.nextLine();
 			if ("12345678".equals(pwd)) {
@@ -41,7 +41,7 @@ public class View {
 								String content = scan.nextLine();
 								bs.insertBoard(title, content);
 							}else if("2".equals(cmd)) {
-								System.out.println("지우고 싶은 줄 : ");
+								System.out.println("지우고 싶은 줄을 선택하세요 : ");
 								String num = scan.nextLine();
 								int a = Integer.parseInt(num);
 								bs.deleteBoard(a);
@@ -56,7 +56,6 @@ public class View {
 								bs.updateBoard(a,title,content);
 							}
 			           }
-						
 				} else {
 					System.out.println("비밀번호가 틀렸습니다.");
 				}

@@ -29,7 +29,7 @@ public class BoardService {
 			PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
 			ps.setString(1, title);
 			ps.setString(2, content);
-			int cnt = ps.executeUpdate();
+			int cnt = ps.executeUpdate();  //내용을 넣고 실행시켜
 			if (cnt == 1) {
 				System.out.println("정상적으로 게시물 등록 완료");
 			}
@@ -40,6 +40,7 @@ public class BoardService {
 		}
 	}
 public void deleteBoard(int num) {
+//	int a = Integer.parseInt(num); 여기서 변환해서 넘긴다. 그럴려먼 (String num)으로
 String sql = "delete from board_info where bi_num=?";
 try {
 	PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
@@ -47,6 +48,8 @@ try {
 	int cnt = ps.executeUpdate();
 	if(cnt==1) {
 		System.out.println("정상적으로 삭제되었습니다.");
+	}else {
+		System.out.println("삭제 요청하신 '"+ num +"'번 게시물이 존재하지 않습니다.");
 	}
 } catch (SQLException e) {
 	e.printStackTrace();
