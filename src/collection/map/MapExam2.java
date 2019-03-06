@@ -12,7 +12,7 @@ public class MapExam2 {
 		map.put("주소", "전라도 광주");
 		map.put("직업", "도적");
 		System.out.println(map);
-		Set<String> keys = map.keySet(); //데이터타입은 Set<String>
+		Set<String> keys = map.keySet(); //데이터타입은 Set<String> keyset()(=>메소드)은 key값들로 이루어진 배열을 만들어 준다.
 		System.out.println(keys.size());
 		for(String key : keys) {
 			System.out.println(key+" : "+map.get(key));
