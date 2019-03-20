@@ -16,15 +16,9 @@ public class S extends F {
 		this("아들이 호출 : ");
 		System.out.println("아들1");
 	}
-
 	public S(String str) {
-		this(str, "아들 2 : ");
-		// super(str);
+		super(str);
 		System.out.println("아들2");
-	}
-	public S(String str, String str2) {
-		super(str2);
-		System.out.println("아들3");
 	}
 
 	public static void main(String[] args) {
