@@ -23,10 +23,10 @@ public class Array2 {
 		return array;
 	}
 	public static void main(String[] args) {
-		System.out.println(args.length);
-		for(String str:args) {
-			System.out.println(str);
-		}
+	//	System.out.println(args.length);
+//		for(String str:args) {
+//			System.out.println(str);
+//		}
 		int[] nums = initArray(5);
 		nums = extendsSize(2,nums);       //size가 7이 되어야한다.
 		printArray(nums);
