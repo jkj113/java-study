@@ -11,6 +11,7 @@ public class GuGuDan {
 				}
 			}
 			System.out.println(); // 새로운 줄에서
+			System.out.println("언녕");
 		}
 
 	}
